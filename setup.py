@@ -1,12 +1,13 @@
 import os
 
+from codecs import open
 from pynoti import __author__, __email__, __license__, __version__
 from setuptools import find_packages, setup
 
 
 def read(filename):
     content = ''
-    with open(filename, 'r') as file:
+    with open(filename, 'r', encoding='utf-8') as file:
         content = file.read()
     return content
 
@@ -33,14 +34,24 @@ setup(
     zip_safe=False,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-        'Environment :: Web Environment',
-        'Framework :: Django',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.3',
+        'Programming Language :: Python :: 2.4',
+        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.0',
+        'Programming Language :: Python :: 3.1',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ]
