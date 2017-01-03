@@ -16,7 +16,11 @@ packages = find_packages()
 name = 'pynoti'
 url = download_url = 'https://github.com/leoxnidas/pynoti'
 current_dir = os.path.dirname(os.path.abspath(__file__))
-long_description = read(os.path.join(os.path.dirname(__file__), "README.md"))
+
+try:
+    long_description = read(os.path.join(os.path.dirname(__file__), "README.md"))
+except:
+    long_description = 'no readme'
 
 setup(
     name=name,
