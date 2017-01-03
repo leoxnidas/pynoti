@@ -6,7 +6,7 @@ How to install
 ---------------
 
 ```shell
-pip install pynotify
+pip install pynoti
 ```
 
 Usage
