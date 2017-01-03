@@ -35,6 +35,9 @@ if _check():
 			if len(titleMsg) == 0 and len(msg) == 0:
 				raise RuntimeError('No summary specified.')
 
+			if not isinstace(titleMsg, str) or not isinstace(msg, str):
+				raise RuntimeError('Messages should be python strings.')
+
 			self._title = titleMsg if titleMsg is not None or len(titleMsg) > 0 else ''
 			self._msg= msg if msg is not None or len(msg) else ''
 			self._iconpath = iconpath
