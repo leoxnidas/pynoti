@@ -1,5 +1,5 @@
-pynotify-send
---------------
+pynoti
+------
 easy to use python wrapper for notify-send program.
 
 How to install
