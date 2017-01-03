@@ -5,3 +5,4 @@ Version 1.0
 * Creation of pynoti
 * [update] adding more
 * [update] Noti class to at least accept one message
+* [update] adding validation to Noti class, to only accept strings
