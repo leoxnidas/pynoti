@@ -35,7 +35,7 @@ if _check():
 			if len(titleMsg) == 0 and len(msg) == 0:
 				raise RuntimeError('No summary specified.')
 
-			if not isinstace(titleMsg, str) or not isinstace(msg, str):
+			if not isinstance(titleMsg, str) or not isinstance(msg, str):
 				raise RuntimeError('Messages should be python strings.')
 
 			self._title = titleMsg if titleMsg is not None or len(titleMsg) > 0 else ''
